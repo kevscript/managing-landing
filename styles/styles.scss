@@ -1,6 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+@import '_reset.scss';
 @import '_variables.scss';
+@import '_header.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   font-size: $fs-main;
+  font-family: "Be Vietnam", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 88%;
+  margin: 0 auto;
+  height: 100%;
+
+  @media only screen and (min-width: 1100px) {
+    width: 77%;
+  }
 }
