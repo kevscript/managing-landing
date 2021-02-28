@@ -2,6 +2,7 @@
 @import '_reset.scss';
 @import '_variables.scss';
 @import '_header.scss';
+@import '_hero.scss';
 
 * {
   margin: 0;
@@ -26,5 +27,30 @@ body {
 
   @media only screen and (min-width: 1100px) {
     width: 77%;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+}
+
+.cta {
+  cursor: pointer;
+  display: block;
+  width: 137px;
+  height: 44px;
+  background: $red-light;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0px 8px 30px -10px hsl(12, 88%, 59%);
+  -webkit-box-shadow: 0px 8px 30px -10px hsl(12, 88%, 59%);
+  -moz-box-shadow: 0px 8px 30px -10px hsl(12, 88%, 59%);
+
+  &:hover {
+    opacity: 0.8;
   }
 }
